@@ -1,0 +1,106 @@
+html, body, div, p, ul, li, a, h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  padding: 0;
+}
+
+h1 { font-size: 1.5em; }
+h2 { font-size: 1.4em; }
+h3 { font-size: 1.3em; }
+h4 { font-size: 1.2em; }
+h5 { font-size: 1.1em; }
+h6 { font-size: 1em; }
+
+* {
+  font-family: 'HelveticaNeue-Medium';
+}
+
+html {
+  height: 100%;
+  background-image: -webkit-linear-gradient(bottom, rgb(71,85,231) 10%, rgb(255,255,255) 100%);
+}
+
+.step {
+  display: -webkit-box;
+  background: white;
+  padding: 40px 80px;
+  width: 800px;
+  height: 600px;
+  border-radius: 20px;
+  font-size: 200%;
+  box-sizing: border-box;
+  box-shadow: 0px 5px 10px rgba(0,0,0,0.5);
+  opacity: 0.3;
+  -webkit-box-orient: vertical;
+  -webkit-transition: opacity 300ms;
+}
+
+.step.active {
+  opacity: 1;
+}
+
+.step * {
+  display: -webkit-box;
+}
+
+.step h1 {
+  margin-bottom: 40px;
+  -webkit-box-align: center;
+  -webkit-box-pack: center;
+}
+
+.step p {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  -webkit-box-flex: 1;
+}
+
+.step ul {
+  padding-left: 1em;
+  list-style-type: circle;
+  -webkit-box-orient: vertical;
+}
+
+.step ul li {
+  display: list-item;
+  line-height: 1.75em;
+}
+
+.step table {
+  display: table;
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.step table > tbody {
+  display: table-row-group;
+}
+
+.step table > tbody > tr {
+  display: table-row;
+}
+
+.step table > tbody > tr > td {
+  display: table-cell;
+  border: 1px solid #333;
+  padding: 0.2em;
+}
+
+#title p { background-image: url(../img/stretch.jpg); }
+#long-course p { background-image: url(../img/long-course.jpg); }
+#short-course p { background-image: url(../img/short-course.jpg); }
+#suits-speedo p { background-image: url(../img/speedo.jpg); }
+#suits-paper p { background-image: url(../img/paper.jpg); }
+#suits-aquablade p { background-image: url(../img/aquablade.jpg); }
+#suits-fastskin p { background-image: url(../img/fastskin.jpg); }
+#suits-lzr p { background-image: url(../img/lzr.jpg); }
+
+#im p,
+#freestyle p,
+#backstroke p,
+#breaststroke p,
+#butterfly p,
+#relays p {
+  -webkit-box-align: center;
+  -webkit-box-pack: center;
+}
